@@ -11,7 +11,7 @@ CORS(app)  # Enable CORS for frontend compatibility
 # Define class labels based on the dataset
 class_labels = ['cataract', 'normal fundus', 'pathological myopia','moderate non proliferative retinopathy' ,'dry age-related macular degeneration','glaucoma','mild nonproliferative retinopathy']  # Replace with your actual class labels
 # Load the pre-trained VGG with ResNet model
-model_path = r"E:\VScode\Eye_Single_Label\Trained model final.h5"  # Update with actual model path
+model_path = r"E:\VScode\Eye_Single_Label\backend\Trained model final.h5"  # Update with actual model path
 model = load_model(model_path)
 
 def preprocess_image(image_file, target_size=(128, 128)):
